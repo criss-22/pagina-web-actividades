@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACEROS ALONSO API</title>
+    <!-- Vinculamos nuestra hoja de estilos local -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="p-3 mb-2" style="background-color: #bccbd2;">
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom border-body" style="background-color: #1a202c;" data-bs-theme="dark">
+            <div class="container">
+
+                <h1 class="navbar-brand fw-bold"> <img src="/imagenes/uthhlogo.png" alt="Logo" width="40" height="40"
+                        class="d-inline-block align-text-top"> <span class="notranslate">Cristopher Osorio Morales</span></h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <ul class="nav nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link active nav-link-naranja" aria-current="page" href="/index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-naranja " aria-current="page" href="/actividades.html">Actividades</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link nav-link-naranja" aria-current="page"
+                                    href="https://grupoctic.com/">Home-GrupoTics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-naranja" href="https://github.com/criss-22">Github</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-naranja" href="/Personal.html">Acerca de mí</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container d-flex flex-column align-items-center justify-content-center text-center mt-5">
+        <h1 class="text-dark">Integración de API Propia (Proyecto Móvil)</h1>
+
+        <!-- Este botón ejecutará la función principal al hacer clic -->
+        <button class="btn btn-success"  onclick="cargarUsuarios()">Ver Usuarios</button>
+                <!-- Contenedor vacío donde JS colocará las tarjetas -->
+        <div id="contenedor-usuarios"></div>
+
+    </main>
+
+
+    <div class="container text-dark">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-dark">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-dark text-decoration-none lh-1" aria-label="Bootstrap">
+                    <svg class="bi" width="30" height="24" aria-hidden="true" fill="currentColor">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-dark">
+                    © 2025 Cristopher, OMC
+                </span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3">
+                    <a class="text-dark" href="https://www.instagram.com/fer.mvp_?igsh=ODlrdDE5OGhyMzll"
+                        aria-label="instagram">
+                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-dark" href="https://www.facebook.com/cristopher.osorio.5872?mibextid=ZbWKwL"
+                        aria-label="Facebook">
+                        <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <!-- Vinculamos nuestro script de lógica al final del body -->
+    <script src="acerosalonso.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
